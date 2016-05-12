@@ -1,0 +1,17 @@
+html
+  head
+    title #{user}'s Courses
+
+  body
+    h3 #{user}'s Courses
+
+    ul
+      each course in courses
+        li #{course.code}: #{course.name}
+
+    form(method="post")
+      label Course Name
+        input(type="text", name="name")
+      label Course Code
+        input(type="text", name="code")
+      input(type="submit")
