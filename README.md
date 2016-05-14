@@ -2,23 +2,53 @@
 
 Code from the workshop on May 11, 2016.
 
-### Install
+### Installation
 
-Install the requirements:
+#### Install Node.js
+
+Install from the [Node.js](https://nodejs.org/) website.
+
+If you're on OS X, I recommend installing with
+[n](https://github.com/tj/n) or [nvm](https://github.com/creationix/nvm).
+
+If you use [Homebrew](http://brew.sh), you can
+
+```sh
+$ brew install n
+$ n 4
+```
+
+to install [n](https://github.com/tj/n) and Node.js version 4.
+
+#### Install PostgreSQL
+
+* [Windows](http://www.postgresql.org/download/windows/)
+* [OS X](http://postgresapp.com/)
+
+#### Install the project requirements
 
 ```sh
 $ npm install
 ```
 
-Make sure you have PostgreSQL (Postgres.app) installed and open `psql` from the Elephant logo in the toolbar.
+### Setup the Local Development Database
 
-From `psql` run:
+Make sure your Postgres installation is running.
+On OS X you'll see the elephant logo in the toolbar.
+Open the app (or click the elephant logo) and open `psql`.
+
+From the `psql` console, run:
 
 ```
 username# create database middleendian;
 ```
 
-### Migrate the database
+to create the database. The name of the database (`middleendian`)
+can be whatever you like, but it'll need to match the database
+in the development settings of your
+[knexfile.js](https://github.com/danasilver/middleendian-workshop-demo/blob/cc3d996324643c5b8342715b87b09b78ab85c021/knexfile.js#L5).
+
+Use the [Knex CLI](http://knexjs.org/#Migrations-CLI) to run the migrations:
 
 ```sh
 $ npm install -g knex
@@ -33,7 +63,9 @@ Start the server:
 $ node .
 ```
 
-Visit **localhost:3000** in your web browser.
+This is equivalent to `node index.js`.
+
+Visit **localhost:3000** in your web browser to see the running site.
 
 ### Deploy to Heroku
 
