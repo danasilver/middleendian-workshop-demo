@@ -83,6 +83,8 @@ This is equivalent to `node index.js`.
 
 Visit **localhost:3000** in your web browser to see the running site.
 
+To stop the server (and get back to your terminal), use <kbd>Ctrl + c</kbd>.
+
 ### Deploy to Heroku
 
 #### Get setup with Heroku
