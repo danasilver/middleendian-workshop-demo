@@ -1,2 +1,7 @@
+# OS X-specific.
+# This file gets created when you open the folder in Finder.
 .DS_Store
+
+# Where npm installs packages.
+# We can reinstall these, so we ignore them in version control.
 node_modules/
