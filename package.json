@@ -9,6 +9,7 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Dana Silver <dsilver@middlebury.edu>",
+  "repository": "danasilver/middleendian-workshop-demo",
   "license": "MIT",
   "dependencies": {
     "body-parser": "^1.15.1",
