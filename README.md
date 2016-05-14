@@ -74,7 +74,7 @@ Visit **localhost:3000** in your web browser to see the running site.
 * Create a [Heroku account](https://signup.heroku.com/).
 * Download and install the [Heroku Toolbelt](https://toolbelt.heroku.com/).
 * [Check for an existing SSH key](https://help.github.com/articles/checking-for-existing-ssh-keys/).
-* If you don't have one [generate an SSH key](https://help.github.com/articles/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent/).
+* If you don't have one, [generate an SSH key](https://help.github.com/articles/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent/).
 * [Add your SSH key to Heroku](https://devcenter.heroku.com/articles/keys).
 
 #### Push your code
@@ -109,7 +109,7 @@ $ heroku addons:create heroku-postgresql:hobby-dev
 ##### Push to Heroku
 
 ```sh
-git push heroku master
+$ git push heroku master
 ```
 
 ##### Migrate the database on Heroku
@@ -118,5 +118,13 @@ This runs the `migrate:latest` script we added to the
 [package.json](https://github.com/danasilver/middleendian-workshop-demo/blob/a0d253d1ba152549df01cbe3c4e0a92079e58e06/package.json#L8).
 
 ```sh
-heroku run npm run migrate:latest
+$ heroku run npm run migrate:latest
 ```
+
+##### Open the live app
+
+```sh
+$ heroku open
+```
+
+The website will be **your-app-name.herokuapp.com**.
