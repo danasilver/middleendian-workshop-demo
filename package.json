@@ -8,7 +8,7 @@
     "migrate:latest": "knex migrate:latest",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "",
+  "author": "Dana Silver <dsilver@middlebury.edu>",
   "license": "MIT",
   "dependencies": {
     "body-parser": "^1.15.1",
