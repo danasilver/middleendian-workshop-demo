@@ -92,6 +92,7 @@ Visit **localhost:3000** in your web browser to see the running site.
 * [Check for an existing SSH key](https://help.github.com/articles/checking-for-existing-ssh-keys/).
 * If you don't have one, [generate an SSH key](https://help.github.com/articles/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent/).
 * [Add your SSH key to Heroku](https://devcenter.heroku.com/articles/keys).
+* If you don't have Git installed, follow [the installation guide](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git).
 
 #### Push your code
 
