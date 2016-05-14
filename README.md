@@ -94,9 +94,27 @@ Visit **localhost:3000** in your web browser to see the running site.
 * [Add your SSH key to Heroku](https://devcenter.heroku.com/articles/keys).
 * If you don't have Git installed, follow [the installation guide](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git).
 
-#### Push your code
+#### Push your code to Heroku
 
-##### Make sure the latest changes are committed
+##### Commit your changes with Git
+
+We use Git to deploy code to Heroku.
+
+If you haven't already initialized a Git repository, initialize one with
+
+```sh
+$ git init
+```
+
+You can run `git status` to check if you already initialized one.
+If you didn't, you'll get
+
+```
+$ git status
+fatal: Not a git repository (or any of the parent directories): .git
+```
+
+Commit the latest changes:
 
 ```sh
 $ git add .
