@@ -128,3 +128,8 @@ $ heroku open
 ```
 
 The website will be **your-app-name.herokuapp.com**.
+
+### Questions
+
+If you have any questions or comments,
+[open an issue](https://github.com/danasilver/middleendian-workshop-demo/issues/new) on this repo.
