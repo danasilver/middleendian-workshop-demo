@@ -31,6 +31,22 @@ to install [n](https://github.com/tj/n) and Node.js version 4.
 $ npm install
 ```
 
+If you're starting the project from scratch (i.e. you don't have a **package.json**), run
+
+```sh
+$ npm init
+```
+
+and answer the interactive questions.
+
+You can install the
+[dependencies](https://github.com/danasilver/middleendian-workshop-demo/blob/dfc856c2b6a32134bd280482525be9306c1622eb/package.json#L14-L20)
+one at a time as you need them, or all at once with
+
+```sh
+$ npm install --save express body-parser knex pg pug
+```
+
 ### Setup the Local Development Database
 
 Make sure your Postgres installation is running.
