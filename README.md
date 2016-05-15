@@ -71,6 +71,10 @@ $ npm install -g knex
 $ knex migrate:latest
 ```
 
+If you get an error (`EACCES`) when you try to install knex with the `-g` flag,
+check out the
+[fixing npm permissions](https://docs.npmjs.com/getting-started/fixing-npm-permissions) guide.
+
 ### Develop
 
 Start the server:
